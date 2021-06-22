@@ -1,25 +1,34 @@
 import { useState } from "react";
 import { NavBar } from "../src/Components/NavBar/NavBar";
 import { Header } from "../src/Components/IndexPageComponents/Header/Header";
+import { SponsorSection } from "../src/Components/IndexPageComponents/SponsorSection/SponsorSection";
+import { About } from "../src/Components/IndexPageComponents/About/About";
+import { ScheduleTimelineSection } from "../src/Components/IndexPageComponents/ScheduleTimelineSection/ScheduleTimelineSection";
 import { Sidebar } from "../src/Components/Sidebar/Sidebar";
+import { FAQSection } from "../src/Components/IndexPageComponents/FAQSection/FAQSection";
+import { HostSection } from "../src/Components/IndexPageComponents/HostSection/HostSection";
 
 export default function Home() {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div id="container" className="flex flex-col h-screen bg-theme-bg">
-      <div id="navbar" className="w-screen">
-        {/* {isSidebarOpen && (
-          <Sidebar
-            isSidebarOpen={isSidebarOpen}
-          />
-        )} */}
-        <Sidebar isSidebarOpen={isSidebarOpen}/>
+    <div
+      id="container"
+      className="flex flex-col bg-theme-bg h-screen overflow-hidden"
+    >
+      <div id="navbar" className="w-screen shadow-3xl">
+        <Sidebar isSidebarOpen={isSidebarOpen} />
         <NavBar setSidebarOpen={setSidebarOpen} isSidebarOpen={isSidebarOpen} />
       </div>
-      <div id="header">
-        <Header />
+      <div id="site-content" className="overflow-auto">
+        <div id="header">
+          <Header />
+        </div>
+        <About/>
+        <ScheduleTimelineSection/>
+        <SponsorSection />
+        <FAQSection />
+        <HostSection />
       </div>
-      <div id="scroll-down-icon"></div>
     </div>
   );
 }
