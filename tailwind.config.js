@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: [
@@ -7,6 +9,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Helvetica"],
+      },
       colors: {
         theme: {
           primary: {
@@ -17,6 +22,7 @@ module.exports = {
             300: "#86D1BB",
             400: "#62C2A6",
             500: "#43AE8F",
+            550: "#159782",
             600: "#358971",
             700: "#276452",
             800: "#184034",

@@ -8,15 +8,14 @@ const FAQSection = () => {
               Frequently Asked Question
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              The most common questions about how our business works and what
-              can do for you.
+              The most common questions about the event and what can do for you.
             </p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="w-full lg:w-1/2 px-4 py-2">
               <details className="mb-4 cursor-pointer">
                 <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  How Long is this site live?
+                  How much does it cost?
                 </summary>
                 <span className="text-sm">
                   Laboris qui labore cillum culpa in sunt quis sint veniam.
@@ -26,7 +25,7 @@ const FAQSection = () => {
               </details>
               <details className="mb-4 cursor-pointer">
                 <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  Can I install/upload anything I want on there?
+                  Will there be prizes ?
                 </summary>
 
                 <span className="text-sm">

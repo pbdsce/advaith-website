@@ -12,7 +12,7 @@ const Sidebar = ({ isSidebarOpen }) => {
   const [isEventOpen, setIsEventOpen] = useState(false);
   return (
     <div
-      className={`absolute h-full w-3/4 bg-theme-bg bg-opacity-50 shadow-inset transform transition-all duration-200 ease-in-out backdrop-filter backdrop-blur-lg z-20 ${
+      className={`absolute h-full w-3/4 md:hidden bg-theme-bg bg-opacity-50 shadow-inset transform transition-all duration-200 ease-in-out backdrop-filter backdrop-blur-lg z-20 ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

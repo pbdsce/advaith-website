@@ -50,12 +50,12 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
         <button className="hidden md:block px-3 py-1 text-lg bg-theme-primary-400 rounded-lg font-semibold">
           <a href="/">Register</a>
         </button>
-        <Image
+        {/* <Image
           src="/Assets/Images/DSCE-logo.png"
           width={35}
           height={35}
           className="object-contain"
-        />
+        /> */}
       </div>
     </nav>
   );

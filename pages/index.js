@@ -16,8 +16,18 @@ export default function Home() {
   return (
     <div
       id="container"
-      className="flex flex-col bg-theme-bg h-screen overflow-hidden"
+      className="flex flex-col bg-theme-bg lg:bg-opacity-90 h-screen overflow-hidden"
     >
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        className="hidden lg:block"
+      >
+        <source src="/Assets/Videos/Veil.mp4" type="video/mp4" />
+      </video>
       <Head>
         <title>Advaith HackFest</title>
         <meta property="og:title" content="Advaith Hackfest" key="title" />
@@ -28,7 +38,7 @@ export default function Home() {
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
       </Head>
       <div id="navbar" className="w-screen shadow-3xl">
         <Sidebar isSidebarOpen={isSidebarOpen} />
