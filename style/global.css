@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2f4ef4f;
+  border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #62c2a6;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #358971;
+}
+
+@media screen and (max-width: 720px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}

@@ -6,12 +6,11 @@ const SponsorImageList = [
     ImgSrc: "/Assets/Images/Sponsors/cn-logo-dark.png",
     AltText: "Coding Ninjas",
   },
-   
 ];
 
 const Header = () => {
   return (
-    <div className="flex flex-col place-items-center p-10 space-y-10">
+    <div className="flex flex-col h-screen place-items-center p-10 space-y-10">
       <div className="flex flex-col place-items-center space-y-1">
         <Image
           src="/Assets/Images/advaith-logo.svg"
@@ -23,15 +22,16 @@ const Header = () => {
           brought to you by ACM-W and Point Blank
         </p>
       </div>
-      <div>
+      <div className="md:h-3/6">
         <Image
           src={"/Assets/Images/header-computer.svg"}
           width={300}
           height={300}
+          className="object-fit"
         />
       </div>
       <div className="flex flex-col place-items-center">
-        <p className="text-theme-primary-700 font-semibold text-md">
+        <p className="text-theme-primary-600 font-semibold text-md">
           Our Partners
         </p>
         <SponsorImages
