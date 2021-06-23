@@ -27,7 +27,7 @@ const About = () => {
         </p>
       </div>
       <div className="hidden md:block">
-        <Image src={"/Assets/Images/Hackathon.svg"} width={450} height={450} />
+        <Image src={"/Assets/Images/Hackathon.svg"} width={450} height={450} alt="Hackthon-Logo" />
       </div>
     </div>
   );

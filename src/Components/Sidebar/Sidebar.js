@@ -48,8 +48,8 @@ const Sidebar = ({ isSidebarOpen }) => {
                     isEventOpen ? "block" : "hidden"
                   }`}
                 >
-                  {SidebarOptions.map((event) => (
-                    <div className="p-3 pl-10 hover:bg-white hover:bg-opacity-10 w-full">
+                  {SidebarOptions.map((event, key) => (
+                    <div key={key} className="p-3 pl-10 hover:bg-white hover:bg-opacity-10 w-full">
                       {event.eventName}
                     </div>
                   ))}

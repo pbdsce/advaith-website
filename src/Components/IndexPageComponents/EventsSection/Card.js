@@ -8,6 +8,7 @@ const Card = () => {
             src="/Assets/Images/Brands/Discord-Logo-White.svg"
             width={50}
             height={50}
+            alt="discord-logo"
             className="object-contain"
           />
         </div>
