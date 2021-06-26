@@ -1,38 +1,38 @@
 const EventDetails = [
   {
     date: "20 JULY",
-    time: "00:00 pm",
+    time: "10:00 A.M.",
     eventName: "Capture the Flag",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "A Cybersecurity challenge where hackers exploit vulnerabilities to finds flags in hidden in an open arena",
   },
   {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
+    date: "20 - 26 JULY",
+    time: "09:00 A.M.",
+    eventName: "YeAH",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "Our star event, a hackathon where students across India come together, network, and build the projects that they always wanted to have",
   },
   {
-    date: "20 JULY",
+    date: "Throughout the Event",
     time: "00:00 pm",
-    eventName: "Capture the Flag",
+    eventName: "Technical Writting",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "Participants will attend the various workshops/webinars hosted by us throughout Advaith. Contestants will have to write a technical blog from the topics they liked. Winning Blogs will be featured on our blogging platforms.",
   },
   {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
+    date: "24 July 2021",
+    time: "08:00 pm",
+    eventName: "Coding Marathon",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "A three hour long competetion event that will be conducted on the Codezen Platform. All the participants will compete over a set of Coding Questions",
   },
   {
-    date: "20 JULY",
+    date: "23-26 JULY",
     time: "00:00 pm",
-    eventName: "Capture the Flag",
+    eventName: "Design Wars",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "Participants will mke use of their creativity and Designing skills to create aesome designs for their projects",
   },
   {
     date: "20 JULY",
@@ -70,13 +70,13 @@ const ScheduleTimelineSection = () => {
               id="left-timeline-element"
             >
               <div className="bg-theme-bg shadow-md col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
+              
                 <p>
                   {event.date} {event.time}
                 </p>
-                <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                <h3 className="font-semibold text-lg mb-1"><b>{event.eventName}</b></h3>
                 <p className="leading-tight text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                  quaerat?
+                  {event.eventDesc}
                 </p>
               </div>
               <div className="bg-theme-cardcol-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -102,10 +102,9 @@ const ScheduleTimelineSection = () => {
                 <p>
                   {event.date} {event.time}
                 </p>
-                <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
+                <h3 className="font-semibold text-lg mb-1">{event.eventName}</h3>
                 <p className="leading-tight text-justify">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Vitae, facilis.
+                  {event.eventDesc}
                 </p>
               </div>
             </div>

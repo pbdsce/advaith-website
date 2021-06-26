@@ -11,7 +11,11 @@ const About = () => {
           </h4>
         </div>
         <p className="md:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dui duis
+          <b>Date :</b> 20-26 July 2021<br></br>
+          Our star event, a hackathon where students across India come together, network, and build the projects that they always wanted to have.<br></br>
+          The event strives to encourage participants to make an active impact in their community through innovation. Our goal is to create an environment for students to network, learn, develop, and create amongst each other. By providing a safe, supportive, and collaborative space where participants of all skill levels are inspired to “hack,” our mission of making an impact is accomplished.
+
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dui duis
           fringilla id. Est mauris, sociis tincidunt aliquet pharetra, nunc.
           Tellus ipsum commodo ultricies ornare sociis porta consequat accumsan.
           Urna, in aliquam id fermentum ultrices mauris erat imperdiet a. Orci
@@ -23,7 +27,7 @@ const About = () => {
           turpis purus ut. Urna facilisis adipiscing viverra nibh turpis
           placerat duis mauris. Ac consequat ac nulla dui diam blandit risus,
           elementum, sed. At in pretium rutrum massa et justo. Vitae tortor
-          turpis phasellus facilisi.
+          turpis phasellus facilisi. */}
         </p>
       </div>
       <div className="hidden md:block">

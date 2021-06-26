@@ -18,9 +18,8 @@ const FAQSection = () => {
                   How much does it cost?
                 </summary>
                 <span className="text-sm">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  It's open to all College Students. This means you do not have to think twice before registering.
+                  {/* Ek dhella nhi lgega BC */}
                 </span>
               </details>
               <details className="mb-4 cursor-pointer">
@@ -29,9 +28,8 @@ const FAQSection = () => {
                 </summary>
 
                 <span className="text-sm">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  {/* BSDK Bina Prizes ke kroge tumlog participate */}
+                  Sure, there are many priizes for winners as well as participants. Each participant will be awarded a certificate of participation.
                 </span>
               </details>
               <details className="mb-4 cursor-pointer">
@@ -40,9 +38,7 @@ const FAQSection = () => {
                 </summary>
 
                 <span className="text-sm">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  
                 </span>
               </details>
             </div>
