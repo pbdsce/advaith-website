@@ -1,8 +1,17 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Helvetica"],
+      },
       colors: {
         theme: {
           primary: {
@@ -13,12 +22,14 @@ module.exports = {
             300: "#86D1BB",
             400: "#62C2A6",
             500: "#43AE8F",
+            550: "#159782",
             600: "#358971",
             700: "#276452",
             800: "#184034",
             900: "#0A1B16",
           },
-          bg: "#101A22",
+          bg: "#141F28",
+          card: "#121B23",
         },
       },
     },
