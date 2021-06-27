@@ -2,10 +2,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown } from "../svg/svg.js";
 const SidebarOptions = [
-  { eventName: "event1" },
-  { eventName: "event2" },
-  { eventName: "event3" },
-  { eventName: "event4" },
+  { eventName: "YeAH Hackathon" },
+  { eventName: "CTF" },
+  { eventName: "Coding Marathon" },
+  { eventName: "Design Wars" },
 ];
 
 const Sidebar = ({ isSidebarOpen }) => {

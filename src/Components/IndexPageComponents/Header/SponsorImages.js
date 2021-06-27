@@ -5,7 +5,7 @@ const SponsorImages = ({ Sponsors, className }) => {
       {Sponsors.map((sponsor, key) => (
         <Image
           key={key}
-          src={sponsor.ImgSrc}
+          src={`/Assets/Images/Sponsors/${sponsor.ImgSrc}`}
           alt={sponsor.AltText}
           width={80}
           height={80}

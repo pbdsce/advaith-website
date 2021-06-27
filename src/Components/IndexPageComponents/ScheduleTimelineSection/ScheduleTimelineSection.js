@@ -1,83 +1,54 @@
 const EventDetails = [
   {
-    date: "20 JULY",
+    date: "20-26 JULY 2021",
     time: "00:00 pm",
-    eventName: "Capture the Flag",
+    eventName: "Yet Another Hackathon",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "Our star event, a hackathon where students across India come together, network and build the projects that they always wanted to have.",
   },
   {
-    date: "20 JULY",
+    date: "22-25 JULY 2021",
     time: "00:00 pm",
     eventName: "Capture the Flag",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "A Cybersecurity challenge where hackers exploit vulnerabilities to find the flags hidden in an open arena.",
   },
   {
-    date: "20 JULY",
+    date: "23-26 JULY 2021",
     time: "00:00 pm",
-    eventName: "Capture the Flag",
+    eventName: "Design Wars",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "Students make use of their creativity and UI/UX skills to create amazing user-friendly designs for their projects.",
   },
   {
-    date: "20 JULY",
+    date: "24 JULY 2021",
     time: "00:00 pm",
-    eventName: "Capture the Flag",
+    eventName: "Coding Marathon",
     eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
-  },
-  {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
-    eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
-  },
-  {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
-    eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
-  },
-  {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
-    eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
-  },
-  {
-    date: "20 JULY",
-    time: "00:00 pm",
-    eventName: "Capture the Flag",
-    eventDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit delectus fugiat accusamus adipisci mollitia facere vero culpa fuga eius!",
+      "A 3-hour long coding competition event that will be conducted on the CodeZen platform.",
   },
 ];
 
 const ScheduleTimelineSection = () => {
   return (
     <div className="container px-3 py-10 flex flex-col place-items-center w-full m-auto text-gray-200 space-y-10">
-      <h2 className="text-4xl font-semibold tracking-wider">Schedule</h2>
-      <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+      <h2 className="text-4xl font-semibold tracking-wider">Our <span className="text-theme-primary-500">Schedule</span></h2>
+      <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50 max-w-4xl">
         {EventDetails.map((event, key) =>
           key % 2 == 0 ? (
             <div
-              className="flex flex-row-reverse md:contents"
+              className="flex flex-row-reverse md:contents "
               key={key}
               id="left-timeline-element"
             >
-              <div className="bg-theme-bg shadow-md col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-                <p>
+              <div className="bg-theme-bg shadow-md col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto space-y-2">
+                <p className="text-gray-200 text-md">
                   {event.date} {event.time}
                 </p>
-                <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                <p className="leading-tight text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                  quaerat?
-                </p>
+                <h3 className="font-semibold text-2xl mb-1">
+                  {event.eventName}
+                </h3>
+                <p className="leading-snug text-justify ">{event.eventDesc}</p>
               </div>
               <div className="bg-theme-cardcol-start-5 col-end-6 md:mx-auto relative mr-10">
                 <div className="h-full w-6 flex items-center justify-center">
@@ -102,11 +73,10 @@ const ScheduleTimelineSection = () => {
                 <p>
                   {event.date} {event.time}
                 </p>
-                <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                <p className="leading-tight text-justify">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Vitae, facilis.
-                </p>
+                <h3 className="font-semibold text-lg mb-1">
+                  {event.eventName}
+                </h3>
+                <p className="leading-tight text-justify">{event.eventDesc}</p>
               </div>
             </div>
           )

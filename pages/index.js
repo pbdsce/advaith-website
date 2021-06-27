@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import { NavBar } from "../src/Components/NavBar/NavBar";
 import { Header } from "../src/Components/IndexPageComponents/Header/Header";
@@ -13,6 +13,17 @@ import { CTAButton } from "../src/Components/IndexPageComponents/CTAButton/CTABu
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div
       id="container"

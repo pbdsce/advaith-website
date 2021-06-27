@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1281.565" height="420.926" viewBox="0 0 1281.565 420.926">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ed722f"/>
+      <stop offset="0.269" stop-color="#ed8225"/>
+      <stop offset="0.71" stop-color="#ed9718"/>
+      <stop offset="1" stop-color="#ee9f14"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-70.326 -835.482)">
+    <text id="CODING" transform="translate(478.891 991.482)" fill="#fff" font-size="202.962" font-family="Helvetica" letter-spacing="0.06em"><tspan x="0" y="0">CODING</tspan></text>
+    <text id="NINJAS" transform="translate(479.527 1206.408)" fill="#fff" font-size="217.772" font-family="Helvetica" letter-spacing="0.08em"><tspan x="0" y="0">NINJAS</tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M221.727,941.188H415.412V850.142H222.037a150.805,150.805,0,0,0-88.062,22.7A128.121,128.121,0,0,0,84.95,935.481c-9.987,29.96-15.434,60.827-14.526,91.7-.908,30.867,4.539,62.642,14.526,91.694a128.117,128.117,0,0,0,49.025,62.642,150.8,150.8,0,0,0,88.062,22.7H415.412V1103.047H221.727c-24.552,0-41.829-7.275-52.741-20.914s-17.277-33.645-17.277-60.016c0-53.649,22.733-80.929,70.018-80.929Z" fill="url(#linear-gradient)"/>
+    <path id="Path_2" data-name="Path 2" d="M187.9,1008l90.79,17.345S212.1,1094.554,187.9,1008Z" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_3" data-name="Path 3" d="M400.8,1008.309l-88.016,18.263S389.012,1095.051,400.8,1008.309Z" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
