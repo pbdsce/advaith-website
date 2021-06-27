@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import { HamburgerIcon, CloseIcon } from "../svg/svg";
 const NavItems = [
@@ -29,7 +29,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
         )}
       </div>
       <div className=" md:w-full">
-        <Image
+        <img
           src="/Assets/Images/advaith-logo.png"
           width={200}
           height={20}
@@ -50,7 +50,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
         <button className="hidden md:block px-3 py-1 text-lg bg-theme-primary-400 rounded-lg font-semibold">
           <a href="/">Register</a>
         </button>
-        {/* <Image
+        {/* <img
           src="/Assets/Images/DSCE-logo.png"
           width={35}
           height={35}

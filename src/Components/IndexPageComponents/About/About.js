@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
         <div className="justify-start space-y-2">
           {/* <h2 className="text-4xl font-semibold tracking-wider">YeAH</h2> */}
           <div className="-ml-4">
-            <Image
+            <img
               src="/Assets/Images/yeah-logo.png"
               width={150}
               height={70}
@@ -34,10 +34,10 @@ const About = () => {
         </p>
       </div>
       <div className="hidden md:block">
-        <Image
-          src={"/Assets/Images/Hackathon.svg"}
-          width={450}
-          height={450}
+        <img
+          src={"/Assets/Images/banner.png"}
+          width={600}
+          height={600}
           alt="Hackthon-Logo"
         />
       </div>

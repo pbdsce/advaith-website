@@ -1,8 +1,8 @@
-import Image from "next/image";
+
 const HostImagesList = [
   { imgLink: "/Assets/Images/PointBlank.svg", alt: "PointBlank" },
   { imgLink: "/Assets/Images/DSCE-logo.png", alt: "DSCE" },
-  { imgLink: "/Assets/Images/ACM-W.png", alt: "ACM-W" },
+  { imgLink: "/Assets/Images/ACM-W.svg", alt: "ACM-W" },
 ];
 
 const HostSection = () => {
@@ -12,7 +12,7 @@ const HostSection = () => {
       <div className="flex flex-wrap w-full place-items-center justify-evenly">
         {HostImagesList.map((hostImage, key) => (
           <div key={key}>
-            <Image src={hostImage.imgLink} width={200} height={200} alt={hostImage.alt}/>
+            <img src={hostImage.imgLink} width={200} height={200} alt={hostImage.alt}/>
           </div>
         ))}
       </div>

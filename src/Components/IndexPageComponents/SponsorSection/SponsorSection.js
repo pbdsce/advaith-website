@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { Card } from "./Card";
 
 const PlatinumSponsors = [
@@ -38,7 +38,7 @@ const SponsorSection = () => {
     //   <div className="md:w-1/2 space-y-5">
     //     <h2 className="text-4xl font-semibold tracking-wider">Our Sponsors</h2>
     //     <div>
-    //       <Image
+    //       <img
     //         src="/Assets/Images/Sponsors/cn-logo-dark.png"
     //         alt="Coding Ninjas"
     //         className="object-contain"
@@ -63,19 +63,19 @@ const SponsorSection = () => {
     //     </p>
     //   </div>
     //   <div className="hidden md:block">
-    //     <Image
+    //     <img
     //       src={"/Assets/Images/header-computer.svg"}
     //       width={450}
     //       height={450}
     //     />
     //   </div>
     // </div>
-    <div className="my-20 space-y-7 md:px-16 lg:px-24">
+    <div className="my-20 space-y-20 md:px-16 lg:px-24">
       <div className="flex flex-col place-items-center space-y-7">
         <h2 className="text-4xl md:text-5xl font-bold text-white">
           Platinum <span className="text-theme-primary">Sponsors</span>
         </h2>
-        <div className="flex flex-wrap md:flex-nowrap place-items-center m-auto w-full justify-evenly ">
+        <div className="flex flex-wrap md:flex-nowrap gap-10 md:gap-20 place-items-center m-auto w-full justify-evenly ">
           {PlatinumSponsors.map((sponsor, key) => (
             <Card key={key} sponsor={sponsor} height={300} width={300} />
           ))}
@@ -85,7 +85,7 @@ const SponsorSection = () => {
         <h2 className="text-4xl font-bold text-white">
           Gold <span className="text-theme-primary-500">Sponsors</span>
         </h2>
-        <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center m-auto w-full justify-evenly">
+        <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-16 place-items-center m-auto w-full justify-evenly">
           {GoldSponsors.map((sponsor, key) => (
             <Card key={key} sponsor={sponsor} height={200} width={200} />
           ))}
