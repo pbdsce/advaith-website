@@ -1,11 +1,11 @@
-import Image from "next/image";
+
 import { useState } from "react";
 import { ChevronDown } from "../svg/svg.js";
 const SidebarOptions = [
-  { eventName: "event1" },
-  { eventName: "event2" },
-  { eventName: "event3" },
-  { eventName: "event4" },
+  { eventName: "YeAH Hackathon" },
+  { eventName: "CTF" },
+  { eventName: "Coding Marathon" },
+  { eventName: "Design Wars" },
 ];
 
 const Sidebar = ({ isSidebarOpen }) => {
@@ -19,7 +19,7 @@ const Sidebar = ({ isSidebarOpen }) => {
       <div className="h-full w-full flex flex-col gap-10">
         <div className="space-y-6 mt-52 mb-auto w-full px-10">
           <div className="w-full flex -mt-10">
-            <Image
+            <img
               src="/Assets/Images/advaith-logo.svg"
               width={180}
               height={50}

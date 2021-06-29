@@ -1,10 +1,10 @@
-import Image from "next/image";
-const Card = () => {
+
+const Card = ({event}) => {
   return (
     <div>
-      <div className="h-full w-full md:h-72 md:w-72 p-5 text-white bg-theme-card shadow-lg rounded-lg flex flex-col place-items-center">
+      <div className="w-64 h-64 p-10 text-white hover:scale-110 bg-theme-card shadow-lg rounded-lg flex flex-col place-items-center">
         <div className="m-auto">
-          <Image
+          <img
             src="/Assets/Images/Brands/Discord-Logo-White.svg"
             width={50}
             height={50}
@@ -12,7 +12,7 @@ const Card = () => {
             className="object-contain"
           />
         </div>
-        <p>Lorem ipsum dolor sit amet </p>
+        <p>{event.eventName} </p>
       </div>
     </div>
   );

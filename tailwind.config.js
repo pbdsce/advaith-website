@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Helvetica"],
+        sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         theme: {
