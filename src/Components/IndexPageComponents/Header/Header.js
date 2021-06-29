@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SponsorImages } from "./SponsorImages";
 import { ScrollDownIcon } from "../../svg/svg";
 const SponsorImageList = [
@@ -19,7 +20,10 @@ const SponsorImageList = [
 
 const Header = () => {
   return (
-    <div className="flex flex-col h-screen place-items-center p-10 space-y-10">
+    <div
+      id="header-section"
+      className="flex flex-col h-screen place-items-center p-10 space-y-10"
+    >
       <div className="flex flex-col place-items-center w-full h-full m-auto md:w-1/2 space-y-10">
         <img
           src="/Assets/Images/header-logo.svg"
@@ -35,13 +39,13 @@ const Header = () => {
         </p>
       </div>
       <p className="text-theme-primary-300 md:max-w-sm text-center">
-        A week long technical fest with plethora of events : Hackathon,
-        Ideathon, DesignWars etc
+        A week long technical fest with plethora of events : Hackathon, CTF,
+        Coding Event, DesignWars
       </p>
       <div className="m-auto flex place-items-center md:transform transition duration-300 ease-in-out md:hover:scale-110">
         <div
           className="apply-button"
-          data-hackathon-slug="yeah"
+          data-hackathon-slug=" "
           data-button-theme="light"
           style={{ height: "44px", width: "312px" }}
         ></div>
@@ -58,7 +62,11 @@ const Header = () => {
         </div>
       </div>
       <div className="flex place-content-end h-full">
-        <ScrollDownIcon className="flex m-auto animate-bounce" />
+        <button className="focus:outline-none">
+          <Link href="/#events-section">
+            <ScrollDownIcon className="flex m-auto animate-bounce" />
+          </Link>
+        </button>
       </div>
     </div>
   );

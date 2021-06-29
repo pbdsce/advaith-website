@@ -31,7 +31,7 @@ const EventDetails = [
 
 const ScheduleTimelineSection = () => {
   return (
-    <div className="container px-3 py-10 flex flex-col place-items-center w-full m-auto text-gray-200 space-y-10">
+    <div id="schedule-section" className="container px-3 py-10 flex flex-col place-items-center w-full m-auto text-gray-200 space-y-10">
       <h2 className="text-4xl font-semibold tracking-wider">Our <span className="text-theme-primary-500">Schedule</span></h2>
       <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50 max-w-4xl">
         {EventDetails.map((event, key) =>

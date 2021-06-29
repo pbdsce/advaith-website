@@ -1,11 +1,12 @@
 const FAQSection = () => {
   return (
-    <div>
+    <div id="faq-section">
       <section className="text-gray-300">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-semibold text-center mb-4">
-              Frequently Asked <span className="text-theme-primary-500">Question</span>
+              Frequently Asked{" "}
+              <span className="text-theme-primary-500">Question</span>
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
               The most common questions about the event and what can do for you.
