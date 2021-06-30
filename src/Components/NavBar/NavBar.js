@@ -53,7 +53,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
         </div>
         <div className="hidden md:flex justify-end md:w-full gap-10">
           <button className="px-3 py-1 text-lg bg-theme-primary-400 rounded-lg font-semibold">
-            <a href="/">Register</a>
+            <a href="/">{"Register".toUpperCase()}</a>
           </button>
         </div>
       </div>

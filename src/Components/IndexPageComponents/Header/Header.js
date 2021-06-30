@@ -43,15 +43,10 @@ const Header = () => {
         Coding Event, DesignWars
       </p>
       <div className="m-auto flex place-items-center md:transform transition duration-300 ease-in-out md:hover:scale-110">
-        <div
-          className="apply-button"
-          data-hackathon-slug=" "
-          data-button-theme="light"
-          style={{ height: "44px", width: "312px" }}
-        ></div>
+          
       </div>
       <div className="flex h-full">
-        <div className="flex flex-col place-items-center mt-auto space-y-5">
+        <div className="flex flex-col place-items-center mt-auto space-y-3">
           <p className="text-theme-primary-550 text-md md:text-xl">
             Powered By
           </p>
