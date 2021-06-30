@@ -23,7 +23,18 @@ export default function Home() {
       document.body.removeChild(script);
     };
   }, []);
-
+  useEffect(() => {
+    const navLogo = document.getElementById("nav-logo")
+    const siteContent = document.getElementById("site-content")
+    siteContent.addEventListener("scroll", () => {
+      if (siteContent.scrollTop>100){
+        navLogo.style.display="block";
+      }
+      else{
+        navLogo.style.display="none";
+      }
+    });
+  }, []);
   return (
     <div
       id="container"

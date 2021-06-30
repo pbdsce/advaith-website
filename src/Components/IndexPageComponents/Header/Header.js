@@ -63,8 +63,10 @@ const Header = () => {
       </div>
       <div className="flex place-content-end h-full">
         <button className="focus:outline-none">
-          <Link href="/#events-section">
-            <ScrollDownIcon className="flex m-auto animate-bounce" />
+          <Link href="/#hackathon-section">
+            <a>
+              <ScrollDownIcon className="flex m-auto animate-bounce" />
+            </a>
           </Link>
         </button>
       </div>
