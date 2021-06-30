@@ -36,7 +36,7 @@ const About = () => {
         <div className="my-5">
           <div
             className="apply-button"
-            data-hackathon-slug=" "
+            data-hackathon-slug="yeah"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
           ></div>
