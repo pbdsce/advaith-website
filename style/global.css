@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   @font-face {
     font-family: "Helvetica";
     src: font-url("/fonts/HelveticaMonospaced") format("woff");
   }
-}
+} */
+
+
+@layer base {
+  @font-face {
+    font-family: "Specify";
+    src: font-url("/fonts/Specify") format("ttf");
+  }
+} 
+
 
 body, #site-content {
   scroll-behavior: smooth;

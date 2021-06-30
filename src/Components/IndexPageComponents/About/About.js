@@ -1,8 +1,9 @@
-
-
 const About = () => {
   return (
-    <div id="hackathon-section" className="flex justify-evenly place-items-center text-gray-200 space-y-5 p-7 text-justify container px-5 py-10 mx-auto">
+    <div
+      id="hackathon-section"
+      className="flex justify-evenly place-items-center text-gray-200 space-y-5 p-7 text-justify container px-5 py-10 mx-auto"
+    >
       <div className="md:w-1/2 space-y-5">
         <div className="justify-start space-y-2">
           {/* <h2 className="text-4xl font-semibold tracking-wider">YeAH</h2> */}
@@ -32,10 +33,18 @@ const About = () => {
           space where participants of all skill levels are inspired to “hack,”
           our mission of making an impact is accomplished.
         </p>
+        <div className="my-5">
+          <div
+            className="apply-button"
+            data-hackathon-slug=" "
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
+        </div>
       </div>
       <div className="hidden md:block">
         <img
-          src={"/Assets/Images/banner.png"}
+          src={"/Assets/Images/Saly-13.png"}
           width={600}
           height={600}
           alt="Hackthon-Logo"
