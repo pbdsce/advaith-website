@@ -24,14 +24,24 @@ export default function Home() {
     };
   }, []);
   useEffect(() => {
-    const navLogo = document.getElementById("nav-logo")
-    const siteContent = document.getElementById("site-content")
+    const navLogo = document.getElementById("nav-logo");
+    const siteContent = document.getElementById("site-content");
+    const headerRegister = document.getElementById("header-register-button");
+    const navRegister = document.getElementById("nav-register-button");
     siteContent.addEventListener("scroll", () => {
-      if (siteContent.scrollTop>100){
-        navLogo.style.display="block";
+      if (siteContent.scrollTop > 500) {
+        navRegister.style.display = "flex";
+      } else {
+        navRegister.style.display = "none";
       }
-      else{
-        navLogo.style.display="none";
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 768) {
+          if (siteContent.scrollTop > 250) {
+            navLogo.style.display = "block";
+          } else {
+            navLogo.style.display = "none";
+          }
+        }
       }
     });
   }, []);

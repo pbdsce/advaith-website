@@ -51,9 +51,14 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
             </button>
           ))}
         </div>
-        <div className="hidden md:flex justify-end md:w-full gap-10">
-          <button className="px-3 py-1 text-lg bg-theme-primary-400 rounded-lg font-semibold">
-            <a href="/">{"Register".toUpperCase()}</a>
+        <div className="flex justify-end md:w-full gap-10">
+          <button
+            id="nav-register-button"
+            className="hidden px-3 py-1 text-lg bg-theme-primary-400 rounded-sm font-semibold"
+          >
+            <a href="https://advaithtechfest.typeform.com/to/WVuhBpqL">
+              {"Register".toUpperCase()}
+            </a>
           </button>
         </div>
       </div>

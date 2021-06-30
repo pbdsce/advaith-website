@@ -50,7 +50,7 @@ const SponsorSection = () => {
         <h2 className="text-3xl font-bold text-white">
           Gold <span className="text-theme-primary-500">Sponsors</span>
         </h2>
-        <div className="px-10 md:py-10 grid grid-cols-4 gap-10 lg:gap-16 place-items-center m-auto w-full justify-evenly">
+        <div className="px-10 md:py-10 grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16 place-items-center m-auto w-full justify-evenly">
           {GoldSponsors.map((sponsor, key) => (
             <Card key={key} sponsor={sponsor} height={200} width={200} />
           ))}
@@ -60,7 +60,7 @@ const SponsorSection = () => {
         <h2 className="text-2xl font-bold text-white">
           Certificate <span className="text-theme-primary">Partner</span>
         </h2>
-        <div className="px-10 flex flex-wrap md:flex-nowrap place-items-center m-auto w-full justify-evenly ">
+        <div className="px-28 flex flex-wrap md:flex-nowrap place-items-center m-auto w-full justify-evenly ">
           {CertificatePartner.map((partner, key) => (
             <Card key={key} sponsor={partner} height={100} width={300} />
           ))}
