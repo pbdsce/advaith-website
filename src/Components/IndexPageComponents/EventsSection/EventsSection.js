@@ -32,7 +32,7 @@ const EventDetails = [
 
 const EventsSection = () => {
   return (
-    <div className="container flex flex-col place-items-center m-auto justify-evenly w-full space-y-10 py-10 my-10 md:my-20">
+    <div id="events-section" className="container flex flex-col place-items-center m-auto justify-evenly w-full space-y-10 py-10 my-10 md:my-20">
       <div className="flex flex-col place-items-center space-y-1">
         <h3 className="text-4xl font-semibold text-white">
           More <span className="text-theme-primary-500">Events</span>

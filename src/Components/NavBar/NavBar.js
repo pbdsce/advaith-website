@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HamburgerIcon, CloseIcon } from "../svg/svg";
 const NavItems = [
   { itemName: "Home", itemLink: "/#header-section" },
-  { itemName: "Events", itemLink: "/#events-section" },
+  { itemName: "Events", itemLink: "/#hackathon-section" },
   { itemName: "Schedule", itemLink: "/#schedule-section" },
   { itemName: "Sponsors", itemLink: "/#sponsor-section" },
   { itemName: "FAQ", itemLink: "/#faq-section" },
@@ -29,12 +29,15 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
           )}
         </div>
         <div className="m-auto md:w-full px-4">
-          <img
-            src="/Assets/Images/advaith-logo.png"
-            width={200}
-            height={20}
-            className="object-contain"
-          />
+          <a href="/#header-section">
+            <img
+              id="nav-logo"
+              src="/Assets/Images/advaith-logo.png"
+              width={200}
+              height={20}
+              className="object-contain hidden"
+            />
+          </a>
         </div>
         <div className="hidden md:flex gap-5 place-items-center justify-evenly md:w-full text-white">
           {NavItems.map((nav, key) => (
@@ -42,7 +45,9 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
               key={key}
               className="flex place-items-center text-theme-primary-500 font-bold outline-none"
             >
-              <Link href={nav.itemLink}>{nav.itemName}</Link>
+              <Link href={nav.itemLink}>
+                <a>{nav.itemName}</a>
+              </Link>
             </button>
           ))}
         </div>

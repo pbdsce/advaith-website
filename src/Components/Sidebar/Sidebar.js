@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "../svg/svg.js";
 const SidebarOptions = [
@@ -28,7 +28,11 @@ const Sidebar = ({ isSidebarOpen }) => {
           </div>
           <div>
             <div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
-              <p>Hackathon</p>
+              <Link href="/#hackathon-section">
+                <a>
+                  <p>Hackathon</p>
+                </a>
+              </Link>
             </div>
             <div className="w-full text-theme-primary-600 inline-flex place-items-center text-xl font-semibold">
               <div className="place-items-center w-full">
@@ -38,10 +42,12 @@ const Sidebar = ({ isSidebarOpen }) => {
                     setIsEventOpen(!isEventOpen);
                   }}
                 >
-                  <p className="">
-                    Events
-                  </p>
-                  <ChevronDown className="" />
+                  <Link href="/#events-section">
+                    <a className="flex place-items-center">
+                      <p className="">More Events</p>
+                      <ChevronDown className="" />
+                    </a>
+                  </Link>
                 </div>
                 <div
                   className={`text-lg w-full ${
@@ -49,18 +55,35 @@ const Sidebar = ({ isSidebarOpen }) => {
                   }`}
                 >
                   {SidebarOptions.map((event, key) => (
-                    <div key={key} className="p-3 pl-10 hover:bg-white hover:bg-opacity-10 w-full">
+                    <div
+                      key={key}
+                      className="p-3 pl-10 hover:bg-white hover:bg-opacity-10 w-full"
+                    >
                       {event.eventName}
                     </div>
                   ))}
                 </div>
               </div>
+            </div><div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
+              <Link href="/#schedule-section">
+                <a>
+                  <p>Schedule</p>
+                </a>
+              </Link>
             </div>
             <div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
-              <p>Sponsors</p>
+              <Link href="/#sponsor-section">
+                <a>
+                  <p>Sponsors</p>
+                </a>
+              </Link>
             </div>
             <div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
-              <p>FAQ</p>
+              <Link href="/#faq-section">
+                <a>
+                  <p>FAQ</p>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

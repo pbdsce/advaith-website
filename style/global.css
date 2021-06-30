@@ -9,7 +9,7 @@
   }
 }
 
-html {
+body, #site-content {
   scroll-behavior: smooth;
 }
 

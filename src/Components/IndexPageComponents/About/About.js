@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <div id="events-section" className="flex justify-evenly place-items-center text-gray-200 space-y-5 p-7 text-justify container px-5 py-10 mx-auto">
+    <div id="hackathon-section" className="flex justify-evenly place-items-center text-gray-200 space-y-5 p-7 text-justify container px-5 py-10 mx-auto">
       <div className="md:w-1/2 space-y-5">
         <div className="justify-start space-y-2">
           {/* <h2 className="text-4xl font-semibold tracking-wider">YeAH</h2> */}
