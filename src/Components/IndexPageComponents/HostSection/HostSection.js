@@ -69,11 +69,11 @@ const HostSection = () => {
         <h2 className="text-3xl font-bold tracking-wider">
           Event <span className="text-theme-primary-500">Hosts</span>
         </h2>
-        <div className="px-10 grid grid-flow-col gap-10 w-full place-items-center justify-evenly">
+        <div className="px-10 grid grid-flow-row md:grid-flow-col gap-10 w-full place-items-center justify-evenly">
           {HostsList.map((host, key) => (
             <div
               key={key}
-              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-xl rounded-lg p-5 h-full w-full place-items-center space-y-7 min-w-max"
+              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-xl rounded-lg p-5 h-full w-full place-items-center space-y-7 min-w-max transform hover:scale-105"
             >
               <div className="m-auto h-2/3 flex place-items-center">
                 <Link href={host.website} className="m-auto">
@@ -89,7 +89,7 @@ const HostSection = () => {
               </div>
               <div className="flex place-items-center justify-evenly min-w-xl">
                 {host.socialMediaHandles.map((social, key) => (
-                  <div className="">
+                  <div className="transform hover:scale-110">
                     <Link href={social.link}>
                       <a>
                         <img
