@@ -34,11 +34,23 @@ const EventModal = ({ cardDetails, setEventModal }) => {
           >
             <ModalCloseIcon className="text-3xl text-blue-400 opacity-70 transform transition duration-100 ease-in-out hover:scale-110" />
           </button>
-          <div id="editModalContent" className="p-14 max-w-lg text-gray-200 space-y-5">
+          <div
+            id="editModalContent"
+            className="p-14 max-w-lg text-gray-200 space-y-5"
+          >
             <h4 className="text-md italic font-semibold">{`${cardDetails.date} ${cardDetails.time}`}</h4>
-            <h2 className="text-2xl text-theme-primary-500">{cardDetails.eventName}</h2>
-            <h5 className="text-md text-theme-primary-600">{cardDetails.eventCaption}</h5>
-            <p className="text-md">{cardDetails.eventDetails}</p>
+            <h2 className="text-2xl text-theme-primary-500">
+              {cardDetails.eventName}
+            </h2>
+            <h5 className="text-md text-theme-primary-600">
+              {cardDetails.eventCaption}
+            </h5>
+            {/* <p className="text-md text-justify">{cardDetails.eventDetails}</p> */}
+            <ul className="list-disc text-gray-300">
+              {cardDetails.eventDetails.map((item, key) => (
+                <li key={key} className="">{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

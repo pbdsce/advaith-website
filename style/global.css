@@ -9,16 +9,15 @@
   }
 } */
 
-
 @layer base {
   @font-face {
     font-family: "Specify";
-    src: font-url("/fonts/Specify") format("ttf");
+    src: font-url("/fonts/Specify.woff") format("woff");
   }
-} 
+}
 
-
-body, #site-content {
+body,
+#site-content {
   scroll-behavior: smooth;
 }
 
