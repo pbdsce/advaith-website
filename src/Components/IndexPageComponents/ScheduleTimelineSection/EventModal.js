@@ -48,9 +48,7 @@ const EventModal = ({ cardDetails, setEventModal }) => {
             {/* <p className="text-md text-justify">{cardDetails.eventDetails}</p> */}
             <ul className="list-disc text-gray-300">
               {cardDetails.eventDetails.map((item, key) => (
-                <li key={key} className="">
-                  {item}
-                </li>
+                <li key={key} className="">{item}</li>
               ))}
             </ul>
           </div>
