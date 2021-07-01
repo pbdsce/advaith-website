@@ -10,6 +10,7 @@ import { Sidebar } from "../src/Components/Sidebar/Sidebar";
 import { FAQSection } from "../src/Components/IndexPageComponents/FAQSection/FAQSection";
 import { HostSection } from "../src/Components/IndexPageComponents/HostSection/HostSection";
 import { CTAButton } from "../src/Components/IndexPageComponents/CTAButton/CTAButton";
+import Footer from "../src/Components/Footer/Footer";
 
 export default function Home() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -102,6 +103,7 @@ export default function Home() {
         <FAQSection />
         <HostSection />
         <CTAButton />
+        {/* <Footer /> */}
       </div>
     </div>
   );

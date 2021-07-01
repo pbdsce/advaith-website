@@ -1,3 +1,4 @@
+import Link from "next/link";
 const About = () => {
   return (
     <div
@@ -12,6 +13,7 @@ const About = () => {
               src="/Assets/Images/yeah-logo.png"
               width={150}
               height={70}
+              alt="YEAH (Hackathon)"
               className="object-contain"
             />
           </div>
@@ -23,16 +25,36 @@ const About = () => {
           <h4 className="font-bold">Date:</h4>
           <p>20-26 July 2021</p>
         </div>
-        <p className="md:text-lg">
-          Our star event, a hackathon where students across India come together,
-          network, and build the projects that they always wanted to have. The
-          event strives to encourage participants to make an active impact in
-          their community through innovation. Our goal is to create an
-          environment for students to network, learn, develop, and create
-          amongst each other. By providing a safe, supportive, and collaborative
-          space where participants of all skill levels are inspired to “hack,”
-          our mission of making an impact is accomplished.
-        </p>
+        <div className="md:text-lg text-gray-300 space-y-2">
+          <p>
+            <span className="font-bold">'YEAH', YEt Another Hackathon</span> is
+            a 6 day hackathon organized by{" "}
+            <Link href="https://pointblank.club">
+              <a className="underline text-theme-primary-400 tracking-wide">
+                Point Blank
+              </a>
+            </Link>{" "}
+            and{" "}
+            <Link href="https://acmw-dsce.github.io/">
+              <a className="underline text-theme-primary-400 tracking-wide">
+                ACM-W
+              </a>
+            </Link>{" "}
+            chapter DSCE to provide students from colleges across India, with a
+            platform to prove their development skills by solving some of the
+            prevalent problems of all times. YEAH is an open invitation for
+            creative minds to delve into their curiosities, learn something new,
+            and build something awesome. Our goal is to create an environment
+            for students to network, learn, develop, and create amazing stuff.
+          </p>
+          <p className="italic">
+            Compete and bag home attractive prizes and goodies
+          </p>
+          <p className="italic">
+            {" "}
+            Make sure you have joined our discord server
+          </p>
+        </div>
         <div className="my-5">
           <div
             className="apply-button"
