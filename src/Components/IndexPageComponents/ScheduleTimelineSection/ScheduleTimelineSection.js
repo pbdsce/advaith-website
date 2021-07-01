@@ -3,23 +3,6 @@ import { EventModal } from "./EventModal";
 
 const EventDetails = [
   {
-    date: "20-26 JULY 2021",
-    time: "",
-    eventName: "Yet Another Hackathon",
-    imgLink: "/Assets/Images/Icons/hackathon.svg",
-    eventTagline: "Create.collaborate.compete ",
-    eventCaption:
-      "Our star event, a hackathon where students across India come together, network and build the projects that they always wanted to have.",
-    eventDetails: [
-      `Join the Hackfest, communicate, collaborate and use real tech to solve problems and build sustainable solutions.`,
-      ` Don’t just create but also implement!`,
-      `Each team can consist of 2-4 people.`,
-      `The Development comprises your entire coded project.`,
-      `And the Submission bit must include the presentation of the working project and GitHub link of the project, deployed project link being optional.`,
-      `The included tracks can be social inclusion, passion track, and the last one could be climate change or the current pandemic situation and ways to handle it in an exceptional way.`,
-    ],
-  },
-  {
     date: "22-25 JULY 2021",
     time: "",
     eventName: "Capture the Flag",
@@ -28,10 +11,9 @@ const EventDetails = [
     eventCaption:
       "A Cybersecurity challenge where hackers exploit vulnerabilities to find the flags hidden in an open arena.",
     eventDetails: [
-      `In this challenge, you will be asked to find a specific piece of text/code that may be hidden on the server or behind a webpage.`,
-      `This goal is called the flag, Hence the name!`,
-      `This event will test your coding as well as your mental and logical abilities.`,
-      `The ticking clock and the rush of the competition are bound to make it really exhilarating.`,
+      `It is a 3 day long Jeopardy-style CTF event, in which participants try to complete as many challenges as they can, completing a challenge earns them a flag that provides them points.`,
+      `The participant with the most points at the end of the event will be the winner.`,
+      `There will be an introductory session on CTFs to encourage newcomers towards Cybersecurity.`,
     ],
   },
   {
@@ -43,12 +25,10 @@ const EventDetails = [
     eventCaption:
       "Students make use of their creativity and UI/UX skills to create amazing user-friendly designs for their projects.",
     eventDetails: [
-      `This is where creativity and functionality join forces.`,
-      `A product with a great UX (user experience) cannot have a poor UI (user interface).`,
-      `Here is the chance to use your technical knowledge and skills of design to make a website that creates an intuitive experience that doesn't require the user to think too much!`,
-      `Each team can consist of 2 to 4 members.`,
-      `The members will have to work on the design of interfaces of the given problem statement.`,
-      `They can submit design prototypes in Figma or XD files as PDFs.`,
+      `A theme-based technical writing event.`,
+      `Participants have to design their ideas on a particular theme.`,
+      `Participantes have to  submit design prototypes in Figma or XD files as PDFs.`,
+      `After successful submission, a panel of judges will decide the top designer.`,
     ],
   },
   {
@@ -60,12 +40,9 @@ const EventDetails = [
     eventCaption:
       "A 3-hour long coding competition event that will be conducted on the CodeZen platform.",
     eventDetails: [
-      `This is a cross swords between your skill sets and the timelines.`,
-      `Showcase your skill sets with the best solutions while challenging the time limits.`,
-      `Ready to take up this challenge?`,
-      `Come along, and join CodeCombat.`,
-      `A set of questions will be provided along with a deadline for each. Right submissions get points and wrong ones get a penalty.`,
-      `People with the most solutions and the least penalty wins!`,
+      `Brush up your problem solving skills and get ready for this ultimate coding competition, Coding Marathon brought to you by Coding Ninjas.`,
+      `Code, Test, Optimize and ace the leaderboard.`,
+      `Winners bag home attractive prizes.`,
     ],
   },
   {
@@ -77,12 +54,8 @@ const EventDetails = [
     eventCaption: "Code might break, Words stay forever!",
     eventDetails: [
       `Gear up - meet your contenders.`,
-      `Pack your exploits and come compete about something you can't buy - your spoils of war.`,
-      `Get creative with your words as you write about the technologies that surround you, inventions that inspire you.`,
-      `Technical Writing invites you to share your creativity and knowledge to keep us motivated and going.`,
-      `Use this opportunity to unload your backpack of knowledge and experience and find like-minded people all in one go.`,
-      `We eagerly await for you to join us, so here's your chance to tell us all about it in your article.`,
-      `Selected ones will be officially published on the DSCE ACM-W's medium as well as Point Blank's forum/blog and numerous social media platforms.`,
+      `A week long of learning various technologies and writing. Get creative with your words as you write about the technologies that inspire you.`,
+      `A panel of judges will go through your submissions and the winner gets exciting prizes as well as a featured blog on various platforms.`,
     ],
   },
 ];

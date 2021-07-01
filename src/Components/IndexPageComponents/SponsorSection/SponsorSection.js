@@ -126,7 +126,7 @@ const SponsorSection = () => {
         </div>
       </div>
       <div className="flex flex-col place-items-center space-y-5 px-5">
-        <h2 className="text-2xl font-bold text-white">
+        <h2 className="text-3xl font-bold text-white">
           Our <span className="text-theme-primary">Partners</span>
         </h2>
         <div className="px-18 grid grid-cols-2 gap-10 md:flex-nowrap place-items-center m-auto w-full justify-evenly container max-w-sm">
