@@ -22,17 +22,17 @@ const EventModal = ({ cardDetails, setEventModal }) => {
     <div className="absolute h-full w-full inset-0 z-10">
       <div
         id="editModalContainer"
-        className="w-full h-full backdrop-filter backdrop-blur-md bg-theme-card bg-opacity-10 flex place-items-center"
+        className="w-full h-full backdrop-filter backdrop-blur-md bg-theme-card bg-opacity-80 flex place-items-center"
       >
         <div
           id="editModal"
-          className="bg-theme-card bg-opacity-90 backdrop-filter backdrop-blur-xl m-auto shadow-lg rounded-2xl"
+          className="bg-theme-card backdrop-filter backdrop-blur-xl m-auto shadow-lg rounded-2xl"
         >
           <button
             className="float-right m-3 focus:outline-none"
             onClick={() => setEventModal(false)}
           >
-            <ModalCloseIcon className="text-3xl text-blue-400 opacity-70 transform transition duration-100 ease-in-out hover:scale-110" />
+            <ModalCloseIcon className="text-3xl text-theme-primary-500 hover:text-theme-primary-400 opacity-70 transform transition duration-100 ease-in-out hover:scale-110" />
           </button>
           <div
             id="editModalContent"
@@ -48,7 +48,9 @@ const EventModal = ({ cardDetails, setEventModal }) => {
             {/* <p className="text-md text-justify">{cardDetails.eventDetails}</p> */}
             <ul className="list-disc text-gray-300">
               {cardDetails.eventDetails.map((item, key) => (
-                <li key={key} className="">{item}</li>
+                <li key={key} className="">
+                  {item}
+                </li>
               ))}
             </ul>
           </div>

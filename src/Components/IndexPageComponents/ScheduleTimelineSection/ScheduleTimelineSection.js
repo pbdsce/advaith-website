@@ -107,7 +107,7 @@ const ScheduleTimelineSection = () => {
         className="container px-3 py-10 flex flex-col place-items-center w-full m-auto text-gray-200 space-y-10"
       >
         <h2 className="text-4xl font-semibold tracking-wider">
-          Our <span className="text-theme-primary-500">Schedule</span>
+          Event <span className="text-theme-primary-500">Timeline</span>
         </h2>
         <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50 max-w-4xl">
           {EventDetails.map((event, key) =>
@@ -142,7 +142,7 @@ const ScheduleTimelineSection = () => {
                   <div className="h-full w-6 flex items-center justify-center">
                     <div className="h-full w-1 bg-theme-primary-600 pointer-events-none"></div>
                   </div>
-                  <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-theme-primary-300 shadow"></div>
+                  <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-theme-primary-300 shadow "></div>
                 </div>
               </div>
             ) : (
@@ -157,7 +157,7 @@ const ScheduleTimelineSection = () => {
                   </div>
                   <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-theme-primary-500 shadow"></div>
                 </div>
-                <div className="bg-theme-bg shadow-md col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto">
+                <div className="bg-theme-bg shadow-md col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto space-y-2">
                   <p>
                     {event.date} {event.time}
                   </p>

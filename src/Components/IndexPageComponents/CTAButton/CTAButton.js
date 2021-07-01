@@ -1,10 +1,11 @@
-
-
 const CTAButton = () => {
   return (
     <div className="sticky float-right inset-0 flex place-items-center p-5 animate-pulse md:hover:animate-none transition duration-200 ease-in-out">
       <button className="rounded-full p-2 md:p-3 md:m-5 bg-[#5865f2] focus:outline-none">
-        <a className="flex place-items-center rounded-full h-8 w-8">
+        <a
+          href="https://discord.gg/ePP4wzGY"
+          className="flex place-items-center rounded-full h-8 w-8"
+        >
           <img
             src="/Assets/Images/Brands/Discord-Logo-White.svg"
             width={30}

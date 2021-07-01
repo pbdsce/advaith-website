@@ -1,16 +1,33 @@
+const FAQs = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];
+
 const FAQSection = () => {
   return (
     <div id="faq-section">
       <section className="text-gray-300">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="place-items-center container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-semibold text-center mb-4">
               Frequently Asked{" "}
-              <span className="text-theme-primary-500">Question</span>
+              <span className="text-theme-primary-500">Questions</span>
             </h1>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              The most common questions about the event and what can do for you.
-            </p>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"></p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="w-full lg:w-1/2 px-4 py-2">
@@ -98,6 +115,18 @@ const FAQSection = () => {
                   Yes! Participants will be receiving swags.
                 </span>
               </details>
+            </div>
+          </div>
+          <div className="flex container w-full place-items-center">
+            <div className="m-auto flex place-items-center p-5 gap-20 rounded bg-theme-card justify-between">
+              <h3 className="text-gray-200 text-2xl tracking-wide font-semibold">
+                Still have more questions?
+              </h3>
+              <button className="p-2 rounded-sm bg-theme-primary-500 transform hover:scale-105 text-theme-card font-bold focus:outline-none">
+                <a href="https://discord.gg/ePP4wzGY">
+                  Join us on Discord &rarr;
+                </a>
+              </button>
             </div>
           </div>
         </div>
