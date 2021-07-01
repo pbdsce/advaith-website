@@ -39,8 +39,8 @@ const HostsList = [
   {
     imgLink: "/Assets/Images/ACM-W.svg",
     alt: "ACM-W",
-    height: 200,
-    width: 200,
+    height: 250,
+    width: 250,
     website: "https://acmw-dsce.github.io",
     socialMediaHandles: [
       {

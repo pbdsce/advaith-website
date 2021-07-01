@@ -7,7 +7,7 @@ const EventDetails = [
     time: "",
     eventName: "Capture the Flag",
     imgLink: "/Assets/Images/Icons/ctf.svg",
-    eventTagline: "TRY HARDER!!",
+    eventTagline: "Try Harder",
     eventCaption:
       "A Cybersecurity challenge where hackers exploit vulnerabilities to find the flags hidden in an open arena.",
     eventDetails: [
@@ -42,7 +42,7 @@ const EventDetails = [
     eventDetails: [
       `Brush up your problem solving skills and get ready for this ultimate coding competition, Coding Marathon brought to you by Coding Ninjas.`,
       `Code, Test, Optimize and ace the leaderboard.`,
-      `Winners bag home attractive prizes.`,
+      `Winners take home attractive prizes.`,
     ],
   },
   {
