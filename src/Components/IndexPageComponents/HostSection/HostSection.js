@@ -39,8 +39,8 @@ const HostsList = [
   {
     imgLink: "/Assets/Images/ACM-W.svg",
     alt: "ACM-W",
-    height: 250,
-    width: 250,
+    height: 235,
+    width: 235,
     website: "https://acmw-dsce.github.io",
     socialMediaHandles: [
       {
@@ -88,8 +88,8 @@ const HostSection = () => {
                 </Link>
               </div>
               <div className="flex place-items-center justify-evenly min-w-xl">
-                {host.socialMediaHandles.map((social, key) => (
-                  <div className="transform hover:scale-110">
+                {host.socialMediaHandles.map((social, Socialkey) => (
+                  <div key={Socialkey} className="transform hover:scale-110">
                     <Link href={social.link}>
                       <a>
                         <img
