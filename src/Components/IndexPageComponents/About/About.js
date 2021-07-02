@@ -9,13 +9,17 @@ const About = () => {
         <div className="justify-start space-y-2">
           {/* <h2 className="text-4xl font-semibold tracking-wider">YeAH</h2> */}
           <div className="-ml-4">
-            <img
-              src="/Assets/Images/yeah-logo.png"
-              width={150}
-              height={70}
-              alt="YEAH (Hackathon)"
-              className="object-contain"
-            />
+            <Link href="https://yeah.devfolio.co">
+              <a>
+                <img
+                  src="/Assets/Images/yeah-logo.png"
+                  width={150}
+                  height={70}
+                  alt="YEAH (Hackathon)"
+                  className="object-contain"
+                />
+              </a>
+            </Link>
           </div>
           <h4 className="text-2xl text-theme-primary-500 font-semibold">
             Yet Another Hackathon
@@ -40,19 +44,26 @@ const About = () => {
                 ACM-W
               </a>
             </Link>{" "}
-            chapter DSCE to provide students from colleges across India, with a
-            platform to prove their development skills by solving some of the
-            prevalent problems of all times. YEAH is an open invitation for
-            creative minds to delve into their curiosities, learn something new,
-            and build something awesome. Our goal is to create an environment
+            DSCE chapter. This is an opportunity to showcase your technical
+            skills among students across the country! Ideate, create, and pitch
+            the ideas you always wanted to build and get them validated by peers
+            and experts from the industry. Our goal is to create an environment
             for students to network, learn, develop, and create amazing stuff.
           </p>
           <p className="italic">
-            Compete and bag home attractive prizes and goodies
+            Compete and take home attractive{" "}
+            <Link href="https://yeah.devfolio.co/#prizes">
+              <a className="text-theme-primary-500">{"prizes and goodies"}</a>
+            </Link>
+            .
           </p>
           <p className="italic">
             {" "}
-            Make sure you have joined our discord server
+            Make sure you have joined our{" "}
+            <Link href="https://discord.gg/ePP4wzGY">
+              <a className="text-theme-primary-500">discord</a>
+            </Link>{" "}
+            server
           </p>
         </div>
         <div className="my-5">

@@ -1,23 +1,54 @@
 const FAQs = [
   {
-    question: "",
-    answer: "",
+    question: "Who can attend?",
+    answer:
+      "YEAH is open to all College Students. Rest of the events are exclusive to DSI students. Participation in YEAH is open to everyone.",
   },
   {
-    question: "",
-    answer: "",
+    question: "How long will ADVAITH be running for?",
+    answer: "The event will be running for 6 days from 20th july to 25th july.",
   },
   {
-    question: "",
-    answer: "",
+    question: "How do I form teams?",
+    answer:
+      "If you already have a team of at most 4 before the hackathon, feel free to apply as a team. If you don’t there’ll be plenty of opportunities for you to meet people and form a team!",
   },
   {
-    question: "",
-    answer: "",
+    question: "What am I allowed to hack?",
+    answer: `You can build/hack/create anything you want so long as you can get it done within the time limit! Check out our notion [bit.ly/yeah-guide] for inspiration!`,
+  },
+  {
+    question: "I’m a first time hacker, what should I do?",
+    answer:
+      "No worries, we love to welcome first time hackers! We’ll have plenty of experiences oriented around first time hackers to introduce you to the idea of a hackathon!",
+  },
+  {
+    question: "What do I need to participate?",
+    answer:
+      "All you need is an internet connection and a desire to build cool stuff!",
+  },
+  {
+    question: "Do YEAH participants have to register on Devfolio too?",
+    answer: "YES, you must be registered on Devfolio.",
+  },
+  {
+    question: "Will there be swag?",
+    answer: "Yes! Participants will be receiving swags.",
+  },
+  {
+    question: "What is the registration fee for the Event?",
+    answer:
+      "None. Nada. Zero. Zilch. Nahi. There is no registration fee for any of the events.",
+  },
+  {
+    question: "What language should I use for Coding Marathon?",
+    answer:
+      "There are no restrictions for any language of your choice for Coding Marathon.",
   },
 ];
 
 const FAQSection = () => {
+  const totalFAQs = FAQs.length;
   return (
     <div id="faq-section">
       <section className="text-gray-300">
@@ -30,92 +61,31 @@ const FAQSection = () => {
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"></p>
           </div>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-            <div className="w-full lg:w-1/2 px-4 py-2">
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  Who can attend?
-                </summary>
-                <span className="text-sm p-8 decoration-clone">
-                  It's open to all College Students. This means you do not have
-                  to think twice before registering.{" "}
-                </span>
-              </details>
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  When will applications open?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  Sign up using this form to get updates when applications come
-                  out.
-                </span>
-              </details>
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  I’m a first time hacker, what should I do?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  No worries, we love to welcome first time hackers! We’ll have
-                  plenty of experiences oriented around first time hackers to
-                  introduce you to the idea of a hackathon!
-                </span>
-              </details>
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  Can I compete in the Quests and the Regular category?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  No, you may only compete in Quests or the regular category.
-                </span>
-              </details>
-            </div>
-            <div className="w-full lg:w-1/2 px-4 py-2">
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  How do I form teams?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  If you already have a team of at most 4 before the hackathon,
-                  feel free to apply as a team. If you don’t there’ll be plenty
-                  of opportunities for you to meet people and form a team!
-                </span>
-              </details>
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  What am I allowed to hack?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  You can build/hack/create anything you want so long as you can
-                  get it done within the time limit! Check out our tracks for
-                  inspiration!
-                </span>
-              </details>
-
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  What do I need to participate?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  All you need is an internet connection and a desire to build
-                  cool stuff!
-                </span>
-              </details>
-
-              <details className="mb-4 cursor-pointer">
-                <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
-                  Will there be swag?
-                </summary>
-
-                <span className="text-sm p-8 decoration-clone">
-                  Yes! Participants will be receiving swags.
-                </span>
-              </details>
-            </div>
+            {FAQs.map((faq, key) =>
+              key <= totalFAQs / 2 ? (
+                <div className="w-full lg:w-1/2 px-4" key={key}>
+                  <details className="mb-4 cursor-pointer">
+                    <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
+                      {faq.question}
+                    </summary>
+                    <span className="text-sm p-8 decoration-clone">
+                      {faq.answer}
+                    </span>
+                  </details>
+                </div>
+              ) : (
+                <div className="w-full lg:w-1/2 px-4" key={key}>
+                  <details className="mb-4 cursor-pointer">
+                    <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
+                      {faq.question}
+                    </summary>
+                    <span className="text-sm p-8 decoration-clone">
+                      {faq.answer}
+                    </span>
+                  </details>
+                </div>
+              )
+            )}
           </div>
           <div className="flex container w-full place-items-center">
             <div className="m-auto flex place-items-center p-5 gap-20 rounded bg-theme-card justify-between">
