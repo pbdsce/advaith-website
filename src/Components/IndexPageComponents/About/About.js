@@ -8,7 +8,7 @@ const About = () => {
       <div className="md:w-1/2 space-y-5">
         <div className="justify-start space-y-2">
           {/* <h2 className="text-4xl font-semibold tracking-wider">YeAH</h2> */}
-          <div className="-ml-4">
+          <div className="-ml-4 pl-4 md:p-0">
             <Link href="https://yeah.devfolio.co">
               <a>
                 <img
@@ -41,14 +41,14 @@ const About = () => {
             and{" "}
             <Link href="https://acmw-dsce.github.io/">
               <a className="underline text-theme-primary-400 tracking-wide">
-                ACM-W
+                ACM-W DSCE
               </a>
             </Link>{" "}
-            DSCE chapter. This is an opportunity to showcase your technical
-            skills among students across the country! Ideate, create, and pitch
-            the ideas you always wanted to build and get them validated by peers
-            and experts from the industry. Our goal is to create an environment
-            for students to network, learn, develop, and create amazing stuff.
+            Chapter. This is an opportunity to showcase your technical skills
+            among students across the country! Ideate, create, and pitch the
+            ideas you always wanted to build and get them validated by peers and
+            experts from the industry. Our goal is to create an environment for
+            students to network, learn, develop, and create amazing stuff.
           </p>
           <p className="italic">
             Compete and take home attractive{" "}

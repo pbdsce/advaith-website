@@ -65,7 +65,7 @@ const FAQSection = () => {
               key <= totalFAQs / 2 ? (
                 <div className="w-full lg:w-1/2 px-4" key={key}>
                   <details className="mb-4 cursor-pointer">
-                    <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
+                    <summary className="decoration-clone font-semibold bg-gray-800 rounded-md py-2 px-4">
                       {faq.question}
                     </summary>
                     <span className="text-sm p-8 decoration-clone">
@@ -76,7 +76,7 @@ const FAQSection = () => {
               ) : (
                 <div className="w-full lg:w-1/2 px-4" key={key}>
                   <details className="mb-4 cursor-pointer">
-                    <summary className="font-semibold bg-gray-800 rounded-md py-2 px-4">
+                    <summary className="decoration-clone font-semibold bg-gray-800 rounded-md py-2 px-4">
                       {faq.question}
                     </summary>
                     <span className="text-sm p-8 decoration-clone">
@@ -88,11 +88,11 @@ const FAQSection = () => {
             )}
           </div>
           <div className="flex container w-full place-items-center">
-            <div className="m-auto flex place-items-center p-5 gap-20 rounded bg-theme-card justify-between">
-              <h3 className="text-gray-200 text-2xl tracking-wide font-semibold">
+            <div className="m-auto flex flex-wrap md:flex-nowrap place-items-center p-5 gap-5 md:gap-20 rounded bg-theme-card justify-between">
+              <h3 className="m-auto text-gray-200 text-xl md:text-2xl tracking-wide font-semibold">
                 Still have more questions?
               </h3>
-              <button className="p-2 rounded-sm bg-theme-primary-500 transform hover:scale-105 text-theme-card font-bold focus:outline-none">
+              <button className="m-auto p-2 rounded-sm bg-theme-primary-500 transform hover:scale-105 text-theme-card font-bold focus:outline-none">
                 <a href="https://discord.gg/ePP4wzGY">
                   Join us on Discord &rarr;
                 </a>

@@ -90,7 +90,7 @@ const ScheduleTimelineSection = () => {
                 key={key}
                 id="left-timeline-element"
               >
-                <div className="bg-theme-bg shadow-md col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto space-y-2">
+                <div className="bg-theme-card bg-opacity-70 shadow-md col-start-1 col-end-5 p-4 rounded-xl my-4 mr-auto md:ml-auto md:mr-0 space-y-2">
                   <p className="text-gray-200 text-md">
                     {event.date} {event.time}
                   </p>
@@ -111,7 +111,7 @@ const ScheduleTimelineSection = () => {
                     </p>
                   </button>
                 </div>
-                <div className="bg-theme-cardcol-start-5 col-end-6 md:mx-auto relative mr-10">
+                <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
                   <div className="h-full w-6 flex items-center justify-center">
                     <div className="h-full w-1 bg-theme-primary-600 pointer-events-none"></div>
                   </div>
@@ -130,7 +130,7 @@ const ScheduleTimelineSection = () => {
                   </div>
                   <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-theme-primary-500 shadow"></div>
                 </div>
-                <div className="bg-theme-bg shadow-md col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto space-y-2">
+                <div className="bg-theme-card bg-opacity-70 shadow-md col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto space-y-2">
                   <p>
                     {event.date} {event.time}
                   </p>

@@ -2,10 +2,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "../svg/svg.js";
 const SidebarOptions = [
-  { eventName: "YeAH Hackathon" },
   { eventName: "CTF" },
-  { eventName: "Coding Marathon" },
   { eventName: "Design Wars" },
+  { eventName: "Coding Marathon" },
+  { eventName: "Technical Writing" },
 ];
 
 const Sidebar = ({ isSidebarOpen }) => {
@@ -43,7 +43,7 @@ const Sidebar = ({ isSidebarOpen }) => {
                   }}
                 >
                   <Link href="/#events-section">
-                    <a className="flex place-items-center">
+                    <a className="flex place-items-center space-x-1">
                       <p className="">More Events</p>
                       <ChevronDown className="" />
                     </a>
@@ -59,12 +59,17 @@ const Sidebar = ({ isSidebarOpen }) => {
                       key={key}
                       className="p-3 pl-10 hover:bg-white hover:bg-opacity-10 w-full"
                     >
-                      {event.eventName}
+                      <Link href="/#events-section">
+                        <a className="flex place-items-center">
+                          <p className="">{event.eventName}</p>
+                        </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
               </div>
-            </div><div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
+            </div>
+            <div className="p-3 w-full text-theme-primary-600 hover:bg-white hover:bg-opacity-10 inline-flex place-items-center text-xl font-semibold">
               <Link href="/#schedule-section">
                 <a>
                   <p>Schedule</p>
