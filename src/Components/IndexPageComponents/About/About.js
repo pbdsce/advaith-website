@@ -44,7 +44,7 @@ const About = () => {
                 ACM-W DSCE
               </a>
             </Link>{" "}
-            chapter. This is an opportunity to showcase your technical skills
+            Chapter. This is an opportunity to showcase your technical skills
             among students across the country! Ideate, create, and pitch the
             ideas you always wanted to build and get them validated by peers and
             experts from the industry. Our goal is to create an environment for
