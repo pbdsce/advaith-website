@@ -26,7 +26,6 @@ const EventDetails = [
     eventCaption:
       "Students make use of their creativity and UI/UX skills to create amazing user-friendly designs for their projects.",
     eventDetails: [
-      `A theme-based technical writing event.`,
       `Participants have to design their ideas on a particular theme.`,
       `Participantes have to  submit design prototypes in Figma or XD files as PDFs.`,
       `After successful submission, a panel of judges will decide the top designer.`,

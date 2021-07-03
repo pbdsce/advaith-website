@@ -77,7 +77,7 @@ const HostSection = () => {
             >
               <div className="m-auto h-2/3 flex place-items-center">
                 <Link href={host.website} className="m-auto">
-                  <a>
+                  <a target="_blank">
                     <img
                       src={host.imgLink}
                       width={host.width}
@@ -91,7 +91,7 @@ const HostSection = () => {
                 {host.socialMediaHandles.map((social, Socialkey) => (
                   <div key={Socialkey} className="transform hover:scale-110">
                     <Link href={social.link}>
-                      <a>
+                      <a target="_blank">
                         <img
                           src={social.platformImgLink}
                           alt={social.platform}
