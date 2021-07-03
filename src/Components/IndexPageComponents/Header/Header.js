@@ -24,7 +24,7 @@ const Header = () => {
       id="header-section"
       className="flex flex-col h-screen place-items-center p-10 space-y-10"
     >
-      <div className="flex flex-col place-items-center w-full h-full m-auto md:w-1/2 space-y-5 mt-10 md:mt-36">
+      <div className="flex flex-col place-items-center w-full h-full m-auto md:w-1/2 space-y-3 md:space-y-5 mt-10 md:mt-36">
         <img
           src="/Assets/Images/header-logo.svg"
           priority="true"
@@ -34,9 +34,10 @@ const Header = () => {
           alt="advaith-logo"
           className="object-contain"
         />
-        <p className="text-theme-primary-550 text-sm md:text-lg">
-          brought to you by ACM-W and Point Blank
-        </p>
+        <div className="text-theme-primary-550 text-center text-sm md:text-lg">
+          <p>brought to you by</p>
+          <p>ACM-W DSCE and {"Point Blank".toUpperCase()}</p>
+        </div>
       </div>
       <p className="text-theme-primary-400 md:max-w-md text-center text-lg">
         {/* A week long technical fest with plethora of events: Hackathon, CTF,
@@ -44,7 +45,10 @@ const Header = () => {
         &mdash;&nbsp;{"The Technical Getaway 2021"}&nbsp;&mdash;
       </p>
       <div className="m-auto flex place-items-center md:transform transition duration-300 ease-in-out md:hover:scale-110">
-        <button id="header-register-button" className="antialiased px-5 py-2 text-xl bg-theme-primary-400 rounded-sm font-semibold">
+        <button
+          id="header-register-button"
+          className="antialiased px-5 py-2 text-xl bg-theme-primary-400 rounded-sm font-semibold"
+        >
           <a
             href="https://advaithtechfest.typeform.com/to/WVuhBpqL"
             className="flex place-items-center gap-3"
