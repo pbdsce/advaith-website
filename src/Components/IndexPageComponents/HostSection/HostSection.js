@@ -24,18 +24,25 @@ const HostsList = [
       },
     ],
   },
-  // {
-  //   imgLink: "/Assets/Images/DSCE-logo.png",
-  //   alt: "DSCE",
-  //   height: 150,
-  //   width: 150,
-  //   website: "https://dsce.edu.in",
-  //   socialMediaHandles: [
-  //     { platform: "Instagram", platformImgLink: "/Assets/Images/Brands/instagram.svg", link: "" },
-  //     { platform: "Twitter", platformImgLink: "/Assets/Images/Brands/twitter.svg", link: "" },
-  //     { platform: "LinkedIn", platformImgLink: "/Assets/Images/Brands/linkedin.svg", link: "" },
-  //   ],
-  // },
+  {
+    imgLink: "/Assets/Images/cse-DSCE-logo.png",
+    alt: "DSCE",
+    height: 150,
+    width: 240,
+    website: "https://dsce.edu.in",
+    socialMediaHandles: [
+      {
+        platform: "Instagram",
+        platformImgLink: "/Assets/Images/Brands/instagram.svg",
+        link: "https://www.instagram.com/cse.dsce/",
+      },
+      {
+        platform: "LinkedIn",
+        platformImgLink: "/Assets/Images/Brands/linkedin.svg",
+        link: "https://www.linkedin.com/company/dscecse",
+      },
+    ],
+  },
   {
     imgLink: "/Assets/Images/ACM-W.svg",
     alt: "ACM-W",
@@ -73,7 +80,7 @@ const HostSection = () => {
           {HostsList.map((host, key) => (
             <div
               key={key}
-              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-xl rounded-lg p-5 h-full w-full place-items-center space-y-7 min-w-max transform hover:scale-105"
+              className=" bg-white bg-opacity-5 backdrop-filter backdrop-blur-xl rounded-lg p-5 h-full w-full place-items-center space-y-7 min-w-max transform hover:bg-theme-card"
             >
               <div className="m-auto h-2/3 flex place-items-center">
                 <Link href={host.website} className="m-auto">
