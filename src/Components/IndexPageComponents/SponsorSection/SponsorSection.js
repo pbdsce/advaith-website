@@ -85,12 +85,19 @@ const CertificatePartner = [
     width: 200,
   },
   {
-    name: "AnonAddy",
-    image: "AnonAddy.svg",
-    link: "https://anonaddy.com",
+    name: "SimpleLogin",
+    image: "SimpleLogin.svg",
+    link: "https://simplelogin.io",
     height: 150,
     width: 150,
   },
+  // {
+  //   name: "AnonAddy",
+  //   image: "AnonAddy.svg",
+  //   link: "https://anonaddy.com",
+  //   height: 150,
+  //   width: 150,
+  // },
 ];
 const SponsorSection = () => {
   return (
