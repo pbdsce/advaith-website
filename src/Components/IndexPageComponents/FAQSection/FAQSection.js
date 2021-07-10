@@ -93,7 +93,7 @@ const FAQSection = () => {
                 Still have more questions?
               </h3>
               <button className="m-auto p-2 rounded-sm bg-theme-primary-500 transform hover:scale-105 text-theme-card font-bold focus:outline-none">
-                <a href="https://discord.gg/ePP4wzGY">
+                <a href="https://discord.gg/htf5kJy5Ag">
                   Join us on Discord &rarr;
                 </a>
               </button>
