@@ -60,7 +60,7 @@ const About = () => {
           <p className="italic">
             {" "}
             Make sure you have joined our{" "}
-            <Link href="https://discord.gg/ePP4wzGY">
+            <Link href="https://discord.gg/htf5kJy5Ag">
               <a className="text-theme-primary-500">discord</a>
             </Link>{" "}
             server
