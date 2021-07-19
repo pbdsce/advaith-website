@@ -28,13 +28,7 @@ export default function Home() {
   useEffect(() => {
     const navLogo = document.getElementById("nav-logo");
     const siteContent = document.getElementById("site-content");
-    const navRegister = document.getElementById("nav-register-button");
     siteContent.addEventListener("scroll", () => {
-      if (siteContent.scrollTop > 500) {
-        navRegister.style.display = "flex";
-      } else {
-        navRegister.style.display = "none";
-      }
       if (typeof window !== "undefined") {
         if (window.innerWidth > 768) {
           if (siteContent.scrollTop > 250) {

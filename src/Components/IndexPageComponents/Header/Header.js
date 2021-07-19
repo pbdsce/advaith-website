@@ -44,31 +44,28 @@ const Header = () => {
         Coding Event, and DesignWars */}
         &mdash;&nbsp;{"The Technical Getaway 2021"}&nbsp;&mdash;
       </p>
-      <div className="m-auto flex place-items-center md:transform transition duration-300 ease-in-out md:hover:scale-110">
+      <div className="m-auto flex place-items-center md:transform transition duration-300 ease-in-out">
         <button
+          disabled={true}
           id="header-register-button"
-          className="antialiased px-5 py-2 text-xl bg-theme-primary-400 rounded-sm font-semibold"
+          className="antialiased px-5 py-2 text-xl bg-gray-400 rounded-sm font-semibold cursor-not-allowed"
         >
-          <a
-            href="https://advaithtechfest.typeform.com/to/WVuhBpqL"
+          <div
             className="flex place-items-center gap-3"
           >
-            <p>{"Register".toUpperCase()}</p>
+            <p>{"Registerations Closed".toUpperCase()}</p>
             <svg
               stroke="currentColor"
-              fill="none"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              <path d="M376 186h-20v-40c0-55-45-100-100-100S156 91 156 146v40h-20c-22.002 0-40 17.998-40 40v200c0 22.002 17.998 40 40 40h240c22.002 0 40-17.998 40-40V226c0-22.002-17.998-40-40-40zM256 368c-22.002 0-40-17.998-40-40s17.998-40 40-40 40 17.998 40 40-17.998 40-40 40zm62.002-182H193.998v-40c0-34.004 28.003-62.002 62.002-62.002 34.004 0 62.002 27.998 62.002 62.002v40z"></path>
             </svg>
-          </a>
+          </div>
         </button>
       </div>
       <div className="flex h-full">
