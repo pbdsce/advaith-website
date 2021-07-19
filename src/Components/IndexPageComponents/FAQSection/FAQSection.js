@@ -87,18 +87,6 @@ const FAQSection = () => {
               )
             )}
           </div>
-          <div className="flex container w-full place-items-center">
-            <div className="m-auto flex flex-wrap md:flex-nowrap place-items-center p-5 gap-5 md:gap-20 rounded bg-theme-card justify-between">
-              <h3 className="m-auto text-gray-200 text-xl md:text-2xl tracking-wide font-semibold">
-                Still have more questions?
-              </h3>
-              <button className="m-auto p-2 rounded-sm bg-theme-primary-500 transform hover:scale-105 text-theme-card font-bold focus:outline-none">
-                <a href="https://discord.gg/htf5kJy5Ag">
-                  Join us on Discord &rarr;
-                </a>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
     </div>
