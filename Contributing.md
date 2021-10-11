@@ -55,7 +55,7 @@ For enhancements use `feature/your_username/issue#` or `feature/your_username/na
 For bugs use `bug/your_username/issue#` or `bug/your_username/name_of_bug`
 
 ```
-git branch feature/jdoe/567
+git switch -c feature/jdoe/567
 ```
 
 ## Switch to your new branch
@@ -95,7 +95,7 @@ In most cases, you can add this signoff to your commit automatically with the
 address (sorry, no pseudonyms or anonymous contributions). An example of signing off on a commit:
 
 ```
-$ commit -s -m “my commit message w/signoff”
+$ git commit -s -m “my commit message w/signoff”
 ```
 
 To ensure all your commits are signed, you may choose to add this alias to your global `.gitconfig`:
