@@ -30,6 +30,9 @@ body,
   min-height: 100%;
   z-index: -1;
 }
+.hover-effect:hover{
+  text-decoration: underline;
+}
 
 ::-webkit-scrollbar {
   width: 6px;
