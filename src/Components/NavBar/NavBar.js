@@ -43,7 +43,7 @@ const NavBar = ({ isSidebarOpen, setSidebarOpen }) => {
           {NavItems.map((nav, key) => (
             <button
               key={key}
-              className="flex place-items-center text-theme-primary-500 font-bold outline-none"
+              className="flex place-items-center text-theme-primary-500 font-bold outline-none hover:underline"
             >
               <Link href={nav.itemLink}>
                 <a>{nav.itemName}</a>
