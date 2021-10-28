@@ -3,7 +3,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
 Official repository for Advaith.
-Advaith is a Tech fest organised by and Point Blank.Our goal is to create an environment for students to network, learn, develop, and create amazing stuff. This is an opportunity for students across the country to showcase their technical skills get them validated by peers and experts from the industry.
+Advaith is a Tech Fest run by Point Blank. Our goal is to provide an environment for students to network, learn, develop, and create awesome stuff. Advaith is an opportunity for students around the country to showcase their technical skills and get them validated by their peers and experts from the industry.
 
 ## Sections
 
@@ -44,13 +44,8 @@ If Node JS is not installed in your PC, do check out the link provided below:
 <img src="https://ibb.co/KyKDMkT" width="250">
 <img src="https://ibb.co/LYnPTsz" width="250">
 <img src="https://ibb.co/JKQ471c" width="250">
-  </p>
+</p>
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
 ## How to use
 
