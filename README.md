@@ -40,10 +40,10 @@ If Node JS is not installed in your PC, do check out the link provided below:
 ## Screenshots
 
 <p align="center">
-<img src="https://ibb.co/2tG7Qd9" width="250">
-<img src="https://ibb.co/KyKDMkT" width="250">
-<img src="https://ibb.co/LYnPTsz" width="250">
-<img src="https://ibb.co/JKQ471c" width="250">
+<img src="https://i.ibb.co/k8NgfX7/Screenshot-344.png" width="250">
+<img src="https://i.ibb.co/ZT2SnPq/Screenshot-345.png" width="250">
+<img src="https://i.ibb.co/wBMLn2N/Whats-App-Image-2021-10-27-at-5-47-05-PM.jpg" width="250">
+<img src="https://i.ibb.co/L85WtF0/Whats-App-Image-2021-10-27-at-5-47-05-PM-1.jpg" width="250">
 </p>
 
 
@@ -64,4 +64,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 * Create an issue
 * Get it assigned
 * Pull the latest code and start working after it is assigned
-* Create a pull request for 'hacktoberfest' branch and mention the issue number with '#'
+* Create a pull request and mention the issue number with '#'
