@@ -87,7 +87,8 @@ export default function Home() {
         <Sidebar isSidebarOpen={isSidebarOpen} />
         <NavBar setSidebarOpen={setSidebarOpen} isSidebarOpen={isSidebarOpen} />
       </div>
-      <div id="site-content" className="overflow-auto">
+      <div id="site-content" className="overflow-auto"
+      onClick={() => setSidebarOpen(false)}>
         <div id="header">
           <Header />
         </div>
