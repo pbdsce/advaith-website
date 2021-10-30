@@ -39,13 +39,9 @@ If Node JS is not installed in your PC, do check out the link provided below:
 
 ## Screenshots
 
-<p align="center">
-<img src="https://i.ibb.co/k8NgfX7/Screenshot-344.png" width="250">
-<img src="https://i.ibb.co/ZT2SnPq/Screenshot-345.png" width="250">
-<img src="https://i.ibb.co/wBMLn2N/Whats-App-Image-2021-10-27-at-5-47-05-PM.jpg" width="250">
-<img src="https://i.ibb.co/L85WtF0/Whats-App-Image-2021-10-27-at-5-47-05-PM-1.jpg" width="250">
-</p>
-
+<img src="./public/Assets/Images/1.png" width="100%"/> 
+<img src="./public/Assets/Images/2.png" width="100%"/> 
+<img src="./public/Assets/Images/3.jpg" width="425"/> <img src="./public/Assets/Images/4.jpg" width="425"/> 
 
 ## How to use
 
